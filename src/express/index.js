@@ -13,7 +13,7 @@ export default function startExpress () {
     const port = process.env.PORT || 3000;
 
     app.get('/', (req, res) => {
-        res.send('Hello World!')
+        res.send('Try navigating to /customers!')
     });
 
     app.all('/customers', customersController);
