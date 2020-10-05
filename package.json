@@ -6,6 +6,7 @@
   "scripts": {
     "prestart": "npm run -s build",
     "start": "node dist/index.js",
+    "heroku": "heroku local",
     "start_heroku_watch_x3": "nodemon --exec \"heroku local\" --watch 'src' -i 'dist' -V --signal SIGTERM",
     "start_x2": "nf start",
     "watch_x2": "nodemon src/server.js --ignore 'dist/'",
